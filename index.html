@@ -2,64 +2,71 @@
 <html lang="en">
 
 <head>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <title>Hangman Game</title>
-  <link rel="stylesheet" href="master.min.css">
-  <script src="hangman.js" charset="utf-8"></script>
-  <script src="application.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <div id="main" class="container">
-    <button id="new-game">
-      New game
-    </button>
-    <div id="hangman">
-      <div class="right-bar"></div>
-      <div class="top-bar"></div>
-      <div class="left-bar"></div>
-      <div class="base"></div>
+  <div class="contaiener">
+    <div id="main">
+      <button id="new-game">
+        New game
+      </button>
+      <div id="hangman">
+        <div class="right-bar"></div>
+        <div class="top-bar"></div>
+        <div class="left-bar"></div>
+        <div class="base"></div>
 
-      <div class="head"></div>
-      <div class="body"></div>
-      <div class="left-arm"></div>
-      <div class="right-arm"></div>
-      <div class="left-leg"></div>
-      <div class="right-leg"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <div class="left-leg"></div>
+        <div class="right-leg"></div>
 
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+      </div>
 
-    <div id="currentWord">
-      <span>I</span>
-      <span>R</span>
-      <span>O</span>
-      <span>N</span>
-      <span>_</span>
-      <span>A</span>
-      <span>C</span>
-      <span>K</span>
-    </div>
+      <div id="currentWord">
+        <span>I</span>
+        <span>R</span>
+        <span>O</span>
+        <span>N</span>
+        <span>_</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+      </div>
 
-    <div id="letters">
-    </div>
+      <div id="game" class="hide">
+        <div id="currentWord"></div>
+      </div>
 
-    <div id="you-win">
-      <p>Good job, you saved our man!</p>
-    </div>
+      <div id="letters">
+      </div>
 
-    <div id="game-over">
-      <p>Game over!</p>
+      <div id="you-win" class="hide">
+        <p>Good job, you saved our man!</p>
+      </div>
+
+      <div id="game-over" class="hide">
+        <p>Game over!</p>
+      </div>
     </div>
   </div>
+
+  <script src="js/hangman.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

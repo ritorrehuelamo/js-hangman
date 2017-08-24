@@ -35,6 +35,7 @@
 }
 
 #hangman .head {
+  // background: none;
   border-radius: 100%;
   float: left;
   margin-left: 175px;
@@ -75,6 +76,21 @@
   margin-top: -192px;
 }
 
+#hangman div { background: #fff; }
+
+/* ... */
+
+#hangman.lives-10 .base      { background: #000; }
+#hangman.lives-9  .left-bar  { background: #000; }
+#hangman.lives-8  .top-bar   { background: #000; }
+#hangman.lives-7  .right-bar { background: #000; }
+#hangman.lives-6  .head      { border: 2px solid #000; }
+#hangman.lives-5  .body      { background: #000; }
+#hangman.lives-4  .left-arm  { background: #000; }
+#hangman.lives-3  .right-arm { background: #000; }
+#hangman.lives-2  .left-leg  { background: #000; }
+#hangman.lives-1  .right-leg { background: #000; }
+
 #currentWord span {
   display: inline-block;
   margin: 0 10px;
@@ -105,17 +121,11 @@
   color: #8A2512;
 }
 
-#hangman div { background: #fff; }
+#main {
+  margin: 40px auto;
+  width: 600px;
+}
 
-/* ... */
-
-#hangman.lives-10 .base      { background: #000; }
-#hangman.lives-9  .left-bar  { background: #000; }
-#hangman.lives-8  .top-bar   { background: #000; }
-#hangman.lives-7  .right-bar { background: #000; }
-#hangman.lives-6  .head      { border: 2px solid #000; }
-#hangman.lives-5  .body      { background: #000; }
-#hangman.lives-4  .left-arm  { background: #000; }
-#hangman.lives-3  .right-arm { background: #000; }
-#hangman.lives-2  .left-leg  { background: #000; }
-#hangman.lives-1  .right-leg { background: #000; }
+.hide {
+  display: none;
+}
